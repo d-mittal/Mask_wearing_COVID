@@ -1,4 +1,4 @@
-# Mask-Wearing Behavior During COVID-19
+# Policy, Risk, and Norms Shape Collective Behaviors Worldwide
 
 This repository contains code, data, and analysis for the study of mask-wearing behavior during the COVID-19 pandemic.  
 It includes tools for **model calibration**, **uncertainty quantification**, and **data analysis**, applied to data from 47 countries.  
