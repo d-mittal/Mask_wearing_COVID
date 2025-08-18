@@ -12,19 +12,25 @@ We calibrate the model using daily data on mask usage, COVID-19 deaths, and poli
 
 ```
 .
-├── notebooks/
-│   └── calibration_analysis.ipynb   # Main notebook for model calibration, uncertainty quantification, and analysis
-├── scripts/
-│   ├── run_model_A.py                # Runs simulation for Model A
-│   ├── run_model_B.py                # Runs simulation for Model B
-│   └── ...                           # Other model variants
-├── data/
-│   ├── mask_wearing.csv              # Self-reported mask usage
-│   ├── covid_deaths.csv              # WHO/OWID COVID-19 deaths per million
-│   ├── covid_cases.csv               # WHO/OWID COVID-19 cases
-│   ├── policy_stringency.csv         # Oxford COVID-19 Government Response Tracker
-│   ├── socio_economic.csv            # GDP, literacy, population density
-│   └── cultural_indicators.csv       # Cultural tightness & collectivism
+├── Mask_wearing_analysis.ipynb    # Main notebook for model calibration, uncertainty quantification, and analysis
+├── simulation_A.py                # Runs simulation for Model A
+├── simulation_B.py                # Runs simulation for Model 
+├── simulation_C.py                # Runs simulation for Model A
+├── simulation_D.py                # Runs simulation for Model A
+├── simulation_E.py                # Runs simulation for Model A
+├── simulation_F.py                # Runs simulation for Model A
+├── simulation_G.py                # Runs simulation for Model A
+
+├── Data/
+│   ├── mask_complete.pickle              # Self-reported mask usage for entire time period
+│   ├── mask_calibration.pickle              # Self-reported mask usage for entire time period
+│   ├── mask_validation.pickle              # Self-reported mask usage for entire time period
+│   ├── new_deaths_mil.pickle              # WHO/OWID COVID-19 deaths per million
+│   ├── new_cases_mil.pickle               # WHO/OWID COVID-19 cases
+│   ├── policy.pickle         # Oxford COVID-19 Government Response Tracker
+│   ├── SE_factors.pickle            # GDP, literacy, population density
+│   ├── Tightness_Scores.xlsx            # GDP, literacy, population density
+│   └── collectivism.pickle     # Cultural tightness & collectivism
 └── README.md                         # This file
 ```
 
@@ -78,12 +84,6 @@ Follow the cells in order to:
 - Perform uncertainty quantification
 - Generate validation and analysis plots
 
-### Running Scripts
-To simulate a specific model variant:
-```bash
-python scripts/run_model_A.py
-```
-Replace `run_model_A.py` with the desired script.
 
 ---
 
