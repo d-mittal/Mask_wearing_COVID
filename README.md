@@ -1,4 +1,4 @@
-# Mask-wearing behavior during COVID-19 Policy, Risk, and Norms Shape Collective Behaviors Worldwide
+# Mask-wearing behavioral dynamics during COVID-19
 
 This repository contains code, data, and analysis for the study of mask-wearing behavior during the COVID-19 pandemic (Mittal et al, Policy, Risk, and Norms Shape Collective Behaviors Worldwide)   
 It includes tools for **model calibration**, **uncertainty quantification**, and **data analysis**, applied to data from 47 countries.  
@@ -79,5 +79,5 @@ pip install -r requirements.txt
 ## Citation
 If you use this code or data, please cite the original data sources and this repository:
 ```
-Mittal, D. (2025). Mask-wearing behavior during COVID-19. GitHub repository: https://github.com/d-mittal/Mask_wearing_COVID
+Mittal, D. (2025). Mask-wearing behavioral dynamics during COVID-19. GitHub repository: https://github.com/d-mittal/Mask_wearing_COVID
 ```
