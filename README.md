@@ -1,6 +1,6 @@
-# Policy, Risk, and Norms Shape Collective Behaviors Worldwide
+# Mask-wearing behavior during COVID-19 Policy, Risk, and Norms Shape Collective Behaviors Worldwide
 
-This repository contains code, data, and analysis for the study of mask-wearing behavior during the COVID-19 pandemic.  
+This repository contains code, data, and analysis for the study of mask-wearing behavior during the COVID-19 pandemic (Mittal et al, Policy, Risk, and Norms Shape Collective Behaviors Worldwide)   
 It includes tools for **model calibration**, **uncertainty quantification**, and **data analysis**, applied to data from 47 countries.  
 
 The main model is a **utility-based decision framework** that incorporates policy mandates, risk perception from disease incidence, and social norms.  
@@ -29,8 +29,8 @@ We calibrate the model using daily data on mask usage, COVID-19 deaths, and poli
 │   ├── new_cases_mil.pickle               # WHO/OWID COVID-19 cases
 │   ├── policy.pickle                      # Oxford COVID-19 Government Response Tracker
 │   ├── SE_factors.pickle                  # GDP, literacy, population density
-│   ├── Tightness_Scores.xlsx              # GDP, literacy, population density
-│   └── collectivism.pickle                # Cultural tightness & collectivism
+│   ├── Tightness_Scores.xlsx              # Cultural Tightness-Looseness score
+│   └── collectivism.pickle                # Collectivism score
 └── README.md                      # This file
 ```
 
@@ -43,7 +43,6 @@ The analysis presented in this study relies on multiple data sources:
 1. **COVID-19-related deaths**  
    - Source: World Health Organization (WHO) via *Our World in Data* ([OWID COVID-19 deaths](https://ourworldindata.org/covid-deaths))  
    - Data: Daily counts of COVID-19-related fatalities per million  
-   - Pre-processing: Smoothed using a 7-day moving average  
    - Usage: Estimates risk in the model
 
 2. **Mask mandates**  
@@ -60,7 +59,7 @@ The analysis presented in this study relies on multiple data sources:
    - Usage: Primary behavioral outcome
 
 4. **Socio-cultural and economic indicators**  
-   - Cultural tightness & collectivism: From literature ([Gelfand et al., 2011](https://science.sciencemag.org/content/332/6033/1100), [Gelfand et al., 2021](https://www.pnas.org/content/118/3/e2021793118), [Pelham et al., 2022](https://www.nature.com/articles/s41562-021-01266-7))  
+   - Cultural tightness & collectivism: From literature ([Gelfand et al., 2021](https://doi.org/10.1016/S2542-5196(20)30301-6) and [Pelham et al., 2022](https://doi.org/10.1016/j.cresp.2021.100030))  
    - GDP per capita, population density, literacy rate: *Our World in Data*
 
 ---
@@ -73,16 +72,6 @@ The analysis presented in this study relies on multiple data sources:
 ```bash
 pip install -r requirements.txt
 ```
-
-### Running the Notebook
-Open:
-```bash
-jupyter notebook notebooks/calibration_analysis.ipynb
-```
-Follow the cells in order to:
-- Calibrate the model for selected countries
-- Perform uncertainty quantification
-- Generate validation and analysis plots
 
 
 ---
