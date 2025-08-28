@@ -13,13 +13,13 @@ We calibrate the model using daily data on mask usage, COVID-19 deaths, and poli
 ```
 .
 ├── Mask_wearing_analysis.ipynb    # Main notebook for model calibration, uncertainty quantification, and analysis
-├── simulation_A.py                # Runs simulation for Model A
-├── simulation_B.py                # Runs simulation for Model 
-├── simulation_C.py                # Runs simulation for Model A
-├── simulation_D.py                # Runs simulation for Model A
-├── simulation_E.py                # Runs simulation for Model A
-├── simulation_F.py                # Runs simulation for Model A
-├── simulation_G.py                # Runs simulation for Model A
+├── simulation_A.py                # Runs simulation for model with only policy
+├── simulation_B.py                # Runs simulation for model with only risk
+├── simulation_C.py                # Runs simulation for model with policy + risk
+├── simulation_D.py                # Runs simulation for model with policy + norm
+├── simulation_E.py                # Runs simulation for model with risk + norm
+├── simulation_F.py                # Runs simulation for model with policy + risk + norm
+
 
 ├── Data/
 │   ├── mask_complete.pickle               # Self-reported mask usage for entire time period
