@@ -12,12 +12,10 @@ from numba import njit
 @njit(fastmath=True)
 def simulation(I,S,country_params,mu,beta):
     
-    #I=np.log(I)
-    c=country_params
-    #a=0
+    c=country_params[0]
+    
     k=1
-    #mu=0.3
-    #beta=1
+   
     x=0
     time_steps=len(I)
     x_time_series=np.zeros(time_steps, dtype=np.float64)

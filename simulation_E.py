@@ -13,7 +13,7 @@ from numba import njit
 def simulation(I,S,country_params,mu,beta):
     
     #I=np.log(I)
-    c,w=country_params
+    a,w=country_params
     #a=0
     k=1
     #mu=0.3
@@ -23,7 +23,7 @@ def simulation(I,S,country_params,mu,beta):
     x_time_series=np.zeros(time_steps, dtype=np.float64)
     for i in range(time_steps):
         
-        U= -k + c*S[i] + w*(x-0.5)
+        U= -k + a*I[i]+ w*(x-0.5)
         #U= -k + a*I[i] + w*((x-0.5) + c*S[i])
         p_m= 1.0/(1.0 + np.exp(-U * beta))
         
